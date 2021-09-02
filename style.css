@@ -2,3 +2,58 @@
   margin: 0;
   padding: 0;
 }
+
+#clock span {
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(20deg, #f92056 38%, #00deff 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#clock {
+  max-width: 270px;
+  max-height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clock-buttons {
+  display: flex;
+}
+
+.gradient-border {
+  padding: 10px;
+  letter-spacing: 0.2em;
+  font-size: 1.4em;
+  border: 2px solid;
+  border-image: linear-gradient(20deg, #f92056 38%, #00deff 65%);
+  border-image-slice: 1;
+}
+
+.clock-button {
+  margin-top: 5px;
+  font-size: 15px;
+  width: 80px;
+  height: 40px;
+  padding: 10px;
+  border-image: linear-gradient(20deg, #f92056 38%, #00deff 65%);
+  border-image-slice: 1;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(20deg, #f92056 38%, #00deff 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clock-button:first-child {
+  margin-right: 20px;
+}
+
+.clock-button:hover {
+  background: linear-gradient(20deg, #f896ae 38%, #d2f6fc 65%);
+  -webkit-background-clip: text;
+  border-image: linear-gradient(20deg, #f896ae 38%, #d2f6fc 65%);
+  border-image-slice: 1;
+  font-size: 16px;
+}
