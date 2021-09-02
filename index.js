@@ -75,3 +75,4 @@ function createCalendar(elem, year, month) {
 }
 
 createCalendar(document.getElementById('calendar'), 2021, 9);
+//
